@@ -15,7 +15,7 @@ interface TaskDao {
 
     //insertar  una nueva tarea
     @Insert
-    suspend fun insertTasks(task: Task)
+    suspend fun insertTask(task: Task)
 
     //marcar una tarea como terminado
     @Update
@@ -23,6 +23,6 @@ interface TaskDao {
 
     //eliminar una tarea
     @Query("DELETE FROM tasks")
-    suspend fun deleteALLTasks()
+    suspend fun deleteAllTasks()
 
 }
